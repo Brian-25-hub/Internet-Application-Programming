@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* MARGIN LAYER */
+        .margin-box {
+            background-color: #f0f2f5;
+            padding: 40px;
+            position: relative;
+            font-size: 14px;
+            color: #666666;
+        }
+        .margin-label {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-weight: bold;
+        }
+
+        /* BORDER LAYER */
+        .border-box {
+            border: 2px solid #b4c7e7;
+            background-color: #f2f4f8;
+            padding: 30px;
+            position: relative;
+            color: #2f5597;
+        }
+        .border-label {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-weight: bold;
+        }
+
+        /* PADDING LAYER */
+        .padding-box {
+            background-color: #e1fdfb;
+            padding: 40px;
+            position: relative;
+            color: #2e75b6;
+        }
+        .padding-label {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-weight: bold;
+        }
+
+        /* CONTENT LAYER */
+        .content-box {
+            background-color: #ffe6cc;
+            width: 180px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            color: #c65911;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MARGIN (Outer Space) -->
+    <div class="margin-box">
+        <div class="margin-label">MARGIN (Outer Space)</div>
+        
+        <!-- BORDER (Visual Frame) -->
+        <div class="border-box">
+            <div class="border-label">BORDER (Visual Frame)</div>
+            
+            <!-- PADDING (Inner Buffer) -->
+            <div class="padding-box">
+                <div class="padding-label">PADDING (Inner Buffer)</div>
+                
+                <!-- CONTENT (Text & Media) -->
+                <div class="content-box">
+                    CONTENT<br>(Text & Media)
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
